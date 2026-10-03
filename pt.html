@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Política de Privacidade — Silver Japanese: Vocabulário</title>
-  <meta name="description" content="Política de Privacidade para Silver Japanese: Vocabulário — o que coletamos, como usamos e como você pode controlar sua privacidade." />
+  <title>Política de Privacidade — Silver Japanese: Vocabulary</title>
+  <meta name="description" content="Política de Privacidade do Silver Japanese: Vocabulary — o que coletamos, como usamos e como você pode controlar sua privacidade." />
   <style>
     :root{
       --bg:#f7fafc;
@@ -13,120 +13,218 @@
       --muted:#4a5568;
       --note-bg:#fff9e6;
       --note-border:#e3b341;
+      --good-bg:#eefaf1;
+      --good-border:#2f855a;
+      --line:#e2e8f0;
     }
     html,body{height:100%}
     body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#111; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; padding:2rem; }
     .wrap { max-width: 900px; margin: 0 auto; background:var(--card); border-radius:12px; padding:2rem; box-shadow:0 8px 30px rgba(16,24,40,0.06); }
     h1{color:var(--accent); margin:0 0 .25rem}
     h2{color:var(--accent); margin-top:1.25rem}
+    h3{margin-bottom:.35rem}
     p, li { line-height:1.55; margin:0.5rem 0; color: #111; }
     .muted { color:var(--muted); font-size:.95rem }
     ul{ margin-left:1.1rem }
     .summary { background:#eef6ff; padding:12px 16px; border-left:4px solid var(--accent); border-radius:8px; margin:1rem 0; }
     .note { background:var(--note-bg); border-left:4px solid var(--note-border); padding:10px 12px; border-radius:8px; margin:1rem 0; }
-    a { color: #0b66c3; text-decoration:none }
+    .good { background:var(--good-bg); border-left:4px solid var(--good-border); padding:10px 12px; border-radius:8px; margin:1rem 0; }
+    a { color:#0b66c3; text-decoration:none }
     a:hover { text-decoration:underline }
     .footer { margin-top:1.5rem; font-size:.95rem; color:var(--muted) }
     .small { font-size:.9rem; color:var(--muted) }
     code { background:#f2f6fb; padding:.15rem .35rem; border-radius:4px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+    table { width:100%; border-collapse:collapse; margin:.85rem 0; font-size:.95rem; }
+    caption { text-align:left; font-weight:600; color:var(--accent); padding-bottom:.35rem; }
+    th, td { border:1px solid var(--line); padding:.5rem .6rem; text-align:left; vertical-align:top; line-height:1.45; }
+    th { background:#f1f5f9; font-weight:600; }
+    .tag { display:inline-block; font-size:.78rem; font-weight:600; padding:.1rem .45rem; border-radius:999px; border:1px solid var(--line); background:#f8fafc; color:var(--muted); white-space:nowrap; }
+    .tag-local { background:var(--good-bg); border-color:var(--good-border); color:#22543d; }
+    .tag-sent { background:var(--note-bg); border-color:var(--note-border); color:#744210; }
+    @media (max-width:600px){
+      body{ padding:.75rem }
+      .wrap{ padding:1.1rem }
+      table{ font-size:.88rem }
+      th, td{ padding:.4rem .45rem }
+    }
   </style>
 </head>
 <body>
   <main class="wrap" role="main" aria-labelledby="title">
-    <h1 id="title">Política de Privacidade — Silver Japanese: Vocabulário</h1>
-    <p class="muted"><strong>Última atualização:</strong> 18 de janeiro de 2026</p>
+    <h1 id="title">Política de Privacidade — Silver Japanese: Vocabulary</h1>
+    <p class="muted"><strong>Última atualização:</strong> 2 de outubro de 2026</p>
 
     <div class="summary" role="region" aria-label="resumo rápido">
-      <strong>Resumo rápido:</strong> Silver Japanese inclui definições e frases de exemplo geradas por IA, inclui áudio de pronúncia gerado com LuvVoice, exibe <strong>anúncios personalizados</strong> e usa o SDK Google User Messaging Platform (UMP) para coletar e gerenciar o consentimento dos usuários na UE/EEE e no Reino Unido. O aplicativo <strong>não</strong> é direcionado a crianças.
+      <strong>Resumo rápido:</strong> O Silver Japanese inclui definições e frases de exemplo geradas por IA, áudio de pronúncia integrado gerado com LuvVoice, TTSMP3 e TTSMaker, exibe <strong>anúncios personalizados</strong> e usa o SDK User Messaging Platform (UMP) do Google para coletar e gerenciar o consentimento de usuários na UE/EEE e no Reino Unido. O aplicativo <strong>não possui sistema de conta nem servidor nosso</strong> — nunca recebemos seus dados pessoais. Ele solicita sua <strong>data de nascimento</strong> uma vez, na configuração inicial, para confirmar que você atinge a idade mínima de 13 anos e para aplicar publicidade adequada à idade; essa data de nascimento permanece no seu dispositivo e nunca é transmitida. O aplicativo <strong>não</strong> é direcionado a crianças.
     </div>
 
     <h2>1. Visão geral</h2>
-    <p>Esta Política de Privacidade explica como o aplicativo <strong>"Silver Japanese: Vocabulário"</strong> (o "aplicativo") coleta, usa e protege as informações quando você usa o aplicativo. Ao usar o aplicativo, você concorda com os termos descritos aqui.</p>
+    <p>Esta Política de Privacidade explica como o aplicativo <strong>"Silver Japanese: Vocabulary"</strong> (o "aplicativo") coleta, usa e protege informações quando você usa o aplicativo. Ao usar o aplicativo, você concorda com os termos aqui descritos.</p>
+    <p>O aplicativo é distribuído por um desenvolvedor individual e opera inteiramente no seu dispositivo. Não há conta, não há login e não há servidor operado por nós.</p>
 
     <h2>2. Informações que coletamos</h2>
+    <p>Para maior clareza, a tabela abaixo mostra cada item, onde ele é mantido e se alguma vez sai do seu dispositivo.</p>
 
-    <h3>Informações armazenadas localmente no seu dispositivo</h3>
-    <ul>
-      <li><strong>Preferências de idioma</strong> (idioma da interface, opções de exibição) — armazenadas no seu dispositivo para que o aplicativo lembre suas escolhas.</li>
-      <li><strong>Progresso de prática e dados de sessão</strong> — armazenados localmente para que você possa retomar os estudos de onde parou.</li>
-    </ul>
+    <table>
+      <caption>Inventário de dados</caption>
+      <thead>
+        <tr>
+          <th scope="col">Dado</th>
+          <th scope="col">Finalidade</th>
+          <th scope="col">Onde é tratado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data de nascimento <span class="tag tag-local">Apenas no dispositivo</span></td>
+          <td>Confirmar que você atinge a idade mínima de 13 anos e determinar o tratamento publicitário adequado à idade</td>
+          <td>Armazenada localmente e <strong>nunca transmitida</strong>. Apenas uma classificação de idade derivada dela é enviada ao Google (ver seção 4).</td>
+        </tr>
+        <tr>
+          <td>Preferências de idioma <span class="tag tag-local">Apenas no dispositivo</span></td>
+          <td>Lembrar seu idioma de interface e escolhas de exibição</td>
+          <td>Armazenadas apenas localmente.</td>
+        </tr>
+        <tr>
+          <td>Progresso de prática e dados de sessão <span class="tag tag-local">Apenas no dispositivo</span></td>
+          <td>Retomar seus estudos de onde parou e acompanhar o progresso por nível</td>
+          <td>Armazenados apenas localmente.</td>
+        </tr>
+        <tr>
+          <td>Escolhas de consentimento publicitário <span class="tag tag-local">Apenas no dispositivo</span></td>
+          <td>Lembrar se você aceitou, rejeitou ou alterou o consentimento publicitário</td>
+          <td>Armazenadas localmente e repassadas ao Google para que o SDK de publicidade respeite sua escolha.</td>
+        </tr>
+        <tr>
+          <td>Classificação de idade (adolescente / adulto, e abaixo da idade de consentimento digital) <span class="tag tag-sent">Compartilhado com o Google</span></td>
+          <td>Aplicar publicidade adequada à idade conforme as políticas do Google</td>
+          <td>Derivada da sua data de nascimento e enviada ao Google com as solicitações de publicidade e consentimento.</td>
+        </tr>
+        <tr>
+          <td>Identificador de publicidade, dados de interação com anúncios, informações do dispositivo, endereço IP e localização aproximada <span class="tag tag-sent">Compartilhado com o Google</span></td>
+          <td>Entrega de anúncios, medição, limitação de frequência e prevenção de fraudes</td>
+          <td>Coletados pelo Google AdMob e seus parceiros, conforme descrito na seção 5.</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h3>Informações compartilhadas com terceiros</h3>
-    <p>Quando os anúncios são exibidos, o aplicativo trabalha com parceiros de publicidade. Esses parceiros podem coletar ou receber:</p>
-    <ul>
-      <li><strong>Identificadores de publicidade</strong> (por exemplo, ID de publicidade do Android)</li>
-      <li><strong>Dados de interação com anúncios</strong> (visualizações de anúncios, cliques)</li>
-      <li><strong>Informações do dispositivo</strong> (versão do SO, modelo do dispositivo)</li>
-      <li><strong>Endereço IP e localização aproximada</strong> (usados para entrega de anúncios e prevenção de fraudes)</li>
-    </ul>
+    <p>O aplicativo não exige que você crie uma conta e não coleta, por padrão, nomes, endereços de e-mail, números de telefone ou outros identificadores diretos.</p>
 
-    <p>O aplicativo não exige que você crie uma conta e, por padrão, não coleta nomes, endereços de e-mail, números de telefone ou outros identificadores diretos.</p>
+    <div class="good" role="note">
+      <strong>Não recebemos seus dados.</strong> As informações sobre você são armazenadas no seu dispositivo ou trocadas diretamente entre seu dispositivo e o Google. Elas nunca são transmitidas ao desenvolvedor deste aplicativo, nem vistas por ele. O desenvolvedor não pode ver sua data de nascimento, seu progresso de estudo ou seu identificador de publicidade.
+    </div>
 
     <h2>3. Como usamos as informações</h2>
     <ul>
       <li>Fornecer e manter a funcionalidade do aplicativo.</li>
       <li>Lembrar preferências de idioma e progresso de estudo.</li>
-      <li>Exibir anúncios, incluindo <strong>anúncios personalizados</strong>.</li>
+      <li>Aplicar a idade mínima de 13 anos.</li>
+      <li>Exibir anúncios, incluindo <strong>anúncios personalizados</strong>, e aplicar tratamento adequado à idade com base na sua classificação de idade.</li>
       <li>Melhorar a estabilidade do aplicativo e a experiência do usuário.</li>
     </ul>
+    <p>Como não operamos nenhum servidor, nenhum desses usos envolve o recebimento ou processamento dos seus dados pessoais por nós.</p>
 
-    <h2>4. Anúncios, Personalização e Consentimento</h2>
-    <p>O aplicativo exibe <strong>anúncios personalizados</strong> através do Google AdMob.</p>
-
-    <h3>Usuários da UE/EEE/Reino Unido — SDK UMP</h3>
-    <p>Para usuários na UE/EEE e no Reino Unido, o aplicativo usa o SDK <strong>User Messaging Platform (UMP)</strong> do Google para apresentar um formulário de consentimento e registrar sua escolha para personalização de anúncios.</p>
+    <h2>4. Idade e publicidade adequada à idade</h2>
+    <p>Na primeira inicialização, o aplicativo solicita sua <strong>data de nascimento</strong>. Ela é usada apenas para dois fins:</p>
     <ul>
-      <li>O formulário de consentimento permite que você aceite anúncios.</li>
-      <li>Sua escolha é respeitada e aplicada às solicitações de anúncios.</li>
-      <li>Os anúncios são personalizados por padrão, mas se não forem possíveis devido a um erro, o aplicativo exibirá anúncios não personalizados.</li>
-      <li>Se você recusar explicitamente o armazenamento/consentimento exigido por alguns provedores de anúncios, nenhum tipo de anúncio será exibido.</li>
+      <li><strong>Idade mínima.</strong> O aplicativo exige uma idade mínima de <strong>13</strong> anos. Se a data de nascimento informada indicar que você tem menos de 13 anos, o aplicativo não permitirá que você prossiga.</li>
+      <li><strong>Tratamento publicitário.</strong> Sua data de nascimento é usada para calcular uma <strong>classificação de idade</strong>, que é transmitida ao Google para que a publicidade seja tratada de forma adequada ao seu grupo de idade. Dois sinais são derivados:</li>
+    </ul>
+    <ul>
+      <li><strong>Adolescente</strong> — se você tem entre 13 e 17 anos inclusive.</li>
+      <li><strong>Abaixo da idade de consentimento digital</strong> — se você está abaixo da idade em que seu país exige consentimento digital para publicidade (o aplicativo usa 16 como limite geral e segue as regras regionais do Google).</li>
     </ul>
 
     <div class="note" role="note">
-      <strong>Nota:</strong> as redes de anúncios têm suas próprias práticas de dados. Para obter detalhes e configurações globais de anúncios, você pode revisar as Configurações de Anúncios do Google e a documentação do AdMob.
+      <strong>Sua data de nascimento em si nunca é transmitida.</strong> Ela é lida no seu dispositivo e armazenada apenas no seu dispositivo. Apenas a classificação de idade derivada dela é incluída nas solicitações de publicidade e consentimento enviadas ao Google. Nenhum dado de conta ou contato é jamais anexado a ela.
     </div>
 
-    <h2>5. Serviços de terceiros e fontes de conteúdo</h2>
+    <p>O aplicativo <strong>não</strong> marca sua publicidade como direcionada a crianças, pois não permite o uso por pessoas com menos de 13 anos.</p>
+
+    <h2>5. Anúncios, personalização e consentimento</h2>
+    <p>O aplicativo exibe <strong>anúncios personalizados</strong> por meio do Google AdMob, usando formatos de banner e intersticial. Os anunciantes e seus parceiros podem coletar ou receber:</p>
     <ul>
-      <li><strong>Google AdMob</strong> — usado para exibir anúncios. O AdMob pode coletar e processar dados conforme descrito acima. Consulte a documentação de privacidade do Google para obter mais detalhes.</li>
-      <li><strong>Fontes de conteúdo:</strong></li>
-      <ul>
-        <li>As definições e frases de exemplo foram criadas com a assistência de ferramentas de IA.</li>
-        <li>O áudio de pronúncia incluído no aplicativo foi gerado usando <a href="https://luvvoice.com/" target="_blank" rel="noopener">LuvVoice</a>.</li>
-      </ul>
+      <li><strong>Identificadores de publicidade</strong> (por exemplo, o ID de publicidade do Android)</li>
+      <li><strong>Dados de interação com anúncios</strong> (visualizações, cliques)</li>
+      <li><strong>Informações do dispositivo</strong> (versão do sistema operacional, modelo do dispositivo)</li>
+      <li><strong>Endereço IP e localização aproximada</strong> (usados para entrega de anúncios e prevenção de fraudes)</li>
+      <li><strong>Sua classificação de idade</strong>, conforme descrito na seção 4</li>
     </ul>
 
-    <h2>6. Segurança dos dados</h2>
-    <p>As preferências locais e os dados de prática são armazenados no seu dispositivo, e não recebemos dados pessoais do usuário.</p>
-
-    <h2>7. Retenção de dados</h2>
+    <h3>Usuários da UE/EEE/Reino Unido — SDK UMP</h3>
+    <p>Para usuários na UE/EEE e no Reino Unido, o aplicativo usa o SDK <strong>User Messaging Platform (UMP)</strong> do Google para apresentar um formulário de consentimento e registrar sua escolha sobre a personalização de anúncios.</p>
     <ul>
-      <li>Os dados locais do aplicativo permanecem no seu dispositivo até que você limpe o armazenamento do aplicativo ou o desinstale.</li>
-      <li>Os serviços de terceiros (AdMob) retêm dados de acordo com suas próprias políticas de retenção. Consulte as políticas de privacidade desses serviços para obter mais detalhes.</li>
+      <li>O formulário de consentimento permite que você <strong>aceite anúncios, rejeite-os ou gerencie suas escolhas</strong> fornecedor por fornecedor.</li>
+      <li>Sua escolha é respeitada e aplicada às solicitações de anúncios.</li>
+      <li>Você pode <strong>alterar sua decisão a qualquer momento</strong> reabrindo a opção <strong>"Formulário de Consentimento"</strong> na tela de Opções do aplicativo. Essa opção está disponível sempre que as regras do Google exigirem.</li>
+      <li>Os anúncios são personalizados por padrão, mas se isso não for possível devido a um erro, o aplicativo exibirá anúncios não personalizados.</li>
+      <li>Se você recusar explicitamente o armazenamento/consentimento publicitário exigido por alguns provedores de anúncios, nenhum tipo de anúncio será exibido.</li>
+      <li>Se você estiver abaixo da idade de consentimento digital, o aplicativo sinaliza isso ao Google para que as regras de publicidade com restrição de idade possam ser aplicadas.</li>
     </ul>
 
-    <h2>8. Seus direitos</h2>
-    <p>Dependendo da sua localização, você pode ter direitos sob as leis de privacidade aplicáveis (por exemplo, GDPR na UE/EEE/Reino Unido), incluindo os direitos de:</p>
+    <div class="note" role="note">
+      <strong>Nota:</strong> as redes de anúncios têm suas próprias práticas de dados. Para obter detalhes e configurações globais de anúncios, você pode consultar as Configurações de Anúncios do Google e a documentação do AdMob. Você também pode controlar ou redefinir seu identificador de publicidade nas configurações do sistema do seu dispositivo.
+    </div>
+
+    <h2>6. Serviços de terceiros e fontes de conteúdo</h2>
+    <h3>Serviços que processam dados em tempo de execução</h3>
+    <ul>
+      <li><strong>Google AdMob</strong> — usado para exibir anúncios. O AdMob pode coletar e processar dados conforme descrito na seção 5. Consulte a documentação de privacidade do Google para mais detalhes.</li>
+      <li><strong>Google User Messaging Platform (UMP)</strong> — usado para apresentar o formulário de consentimento e repassar sua escolha de consentimento publicitário.</li>
+    </ul>
+
+    <h3>Ferramentas usadas para produzir o conteúdo integrado</h3>
+    <p>O conteúdo de aprendizado incluído no aplicativo — vocabulário japonês, definições, frases de exemplo e áudio de pronúncia — foi preparado offline pelo desenvolvedor antes do lançamento. Ele está integrado ao aplicativo e é servido inteiramente do seu dispositivo.</p>
+    <ul>
+      <li>As definições e frases de exemplo foram criadas com a ajuda de ferramentas de IA.</li>
+      <li>O áudio de pronúncia incluído no aplicativo foi gerado usando <a href="https://luvvoice.com/" target="_blank" rel="noopener">LuvVoice</a>, <a href="https://ttsmp3.com/" target="_blank" rel="noopener">TTSMP3</a> e <a href="https://ttsmaker.com/" target="_blank" rel="noopener">TTSMaker</a>.</li>
+    </ul>
+
+    <div class="good" role="note">
+      <strong>Essas ferramentas não são usadas em tempo de execução.</strong> O aplicativo não faz nenhuma solicitação de rede ao LuvVoice, TTSMP3, TTSMaker ou a qualquer serviço de IA. O texto e o áudio que eles ajudaram a produzir eram conteúdo de aprendizado próprio do aplicativo, não seus dados pessoais, e nenhuma das suas atividades, dados de estudo ou dados do dispositivo é enviada a eles.
+    </div>
+
+    <h2>7. Segurança dos dados</h2>
+    <ul>
+      <li>Sua data de nascimento, preferências de idioma, progresso de prática e escolhas de consentimento são armazenados no armazenamento privado do aplicativo no seu dispositivo. Eles não são incluídos nos backups do dispositivo e outros aplicativos não podem lê-los.</li>
+      <li>Não recebemos dados pessoais de você e não operamos nenhum servidor que possa ser comprometido.</li>
+      <li>As solicitações de publicidade e consentimento são feitas por conexões criptografadas com o Google.</li>
+      <li>Ferramentas de desenvolvimento e teste, incluindo uma ferramenta de teste de consentimento apenas para depuração, são removidas das versões de lançamento do aplicativo.</li>
+    </ul>
+
+    <h2>8. Retenção de dados</h2>
+    <ul>
+      <li><strong>Dados locais do aplicativo</strong> — incluindo sua data de nascimento, preferências e progresso de estudo — permanecem no seu dispositivo até que você limpe o armazenamento do aplicativo, desinstale o aplicativo ou o redefina nas configurações do seu dispositivo.</li>
+      <li><strong>Dados de publicidade e consentimento</strong> mantidos pelo Google AdMob e seus parceiros são retidos de acordo com suas próprias políticas de retenção. Consulte as políticas de privacidade desses serviços para mais detalhes.</li>
+    </ul>
+
+    <h2>9. Seus direitos</h2>
+    <p>Dependendo da sua localização, você pode ter direitos sob as leis de privacidade aplicáveis (por exemplo, o GDPR na UE/EEE/Reino Unido), incluindo os direitos de:</p>
     <ul>
       <li>acessar dados pessoais;</li>
       <li>solicitar correção ou exclusão;</li>
-      <li>restringir ou se opor a determinado processamento (incluindo personalização de anúncios); e</li>
+      <li>limitar ou se opor a determinados processamentos (incluindo personalização de anúncios); e</li>
       <li>portabilidade de dados, quando aplicável.</li>
     </ul>
-    <p>Para exercer esses direitos ou fazer perguntas sobre seus dados, entre em contato conosco no endereço abaixo. Responderemos de acordo com a lei aplicável.</p>
+    <p><strong>Como exercer esses direitos na prática.</strong> Como não recebemos dados pessoais, não podemos recuperar, corrigir ou excluir uma cópia para você — nenhuma existe. Para remover tudo o que o aplicativo mantém sobre você, limpe o armazenamento do aplicativo ou desinstale-o; isso exclui sua data de nascimento, preferências e progresso de estudo do seu dispositivo. Para alterar ou retirar o consentimento publicitário, reabra a opção "Formulário de Consentimento" na tela de Opções do aplicativo. Para controlar a publicidade de forma mais ampla, use as configurações do seu dispositivo e as Configurações de Anúncios do Google.</p>
+    <p>Para qualquer outra coisa, incluindo dúvidas sobre esta política, entre em contato conosco no endereço abaixo. Responderemos de acordo com a legislação aplicável.</p>
 
-    <h2>9. Privacidade das crianças</h2>
-    <p>Este aplicativo não é direcionado a crianças. Não coletamos conscientemente dados pessoais de crianças menores da idade aplicável em seu país (por exemplo, menores de 13 anos nos EUA). Se você acredita que uma criança forneceu informações pessoais através do aplicativo, entre em contato conosco e tomaremos as medidas apropriadas para remover essas informações.</p>
+    <h2>10. Privacidade das crianças</h2>
+    <p>Este aplicativo <strong>não</strong> é direcionado a crianças. O aplicativo tem uma idade mínima de <strong>13</strong> anos: uma data de nascimento é solicitada na configuração inicial, e usuários abaixo dessa idade não podem prosseguir. O aplicativo não exibe publicidade direcionada a crianças e não habilita a personalização de anúncios para usuários que determinou estarem abaixo da idade de consentimento digital.</p>
+    <p>Não coletamos intencionalmente dados pessoais de crianças menores de 13 anos. Se você acredita que uma criança forneceu informações pessoais por meio do aplicativo, entre em contato conosco e tomaremos as medidas apropriadas para remover essas informações.</p>
 
-    <h2>10. Transferências internacionais</h2>
-    <p>Os fornecedores de terceiros (redes de anúncios, provedores de IA, provedores de áudio) podem processar dados em países fora do seu. Quando exigido por lei, salvaguardas apropriadas devem ser usadas. Para obter mais detalhes, consulte as políticas de privacidade do fornecedor ou entre em contato conosco.</p>
+    <h2>11. Transferências internacionais</h2>
+    <p>As solicitações de publicidade e consentimento são enviadas do seu dispositivo para o Google e seus parceiros de publicidade, que podem processar dados em países diferentes do seu. Quando exigido por lei, tais transferências são cobertas por salvaguardas apropriadas, como cláusulas contratuais padrão da Comissão Europeia ou uma decisão de adequação aplicável.</p>
+    <p>As ferramentas listadas na seção 6 foram usadas offline para produzir o conteúdo integrado e não recebem nem processam seus dados pessoais. Para detalhes sobre as salvaguardas de transferência internacional do Google, consulte a documentação de privacidade do Google ou entre em contato conosco.</p>
 
-    <h2>11. Alterações a esta política</h2>
+    <h2>12. Alterações nesta política</h2>
     <p>Podemos atualizar esta Política de Privacidade de tempos em tempos. Quaisquer alterações serão publicadas aqui com uma data de "Última atualização" atualizada.</p>
 
-    <h2>12. Contato</h2>
+    <h2>13. Contato</h2>
     <p>Se você tiver dúvidas sobre esta Política de Privacidade ou desejar exercer seus direitos, entre em contato conosco em:</p>
     <p><strong>E-mail:</strong> <a href="mailto:silverjapanesecontact@gmail.com">silverjapanesecontact@gmail.com</a></p>
+
+    <p class="footer small">Este documento é fornecido como uma página HTML simples, sem cookies, sem rastreadores e sem scripts de terceiros.</p>
 
   </main>
 </body>
